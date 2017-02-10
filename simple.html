@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sample TODO manager</title>
+
+    <!-- CSS -->
+    <link href="simple-css/style.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="simple-js/jquery.js"></script>
+    <!-- Custom --> 
+    <script src="simple-js/custom/entryElement.js"></script>
+    <script src="simple-js/custom/main.js"></script>
+    <script src="simple-js/custom/dataContainer.js"></script>
+</head>
+
+
+<body onload="main.init()">
+    <a onclick="main.addNew()" class="unselectable hand-cursor">add new</a>
+    <a onclick="main.updateOrder()" class="unselectable hand-cursor">sort</a>
+	<div id="main-container">
+    </div>
+
+</body>
+
+</html>
