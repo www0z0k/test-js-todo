@@ -63,7 +63,7 @@ var entryElement = {
 		$(input).bind('input propertychange', function() {
 			dataContainer.processChange(id);
 		});
-		$(doneBox).bind('input propertychange', function() {
+		$(doneBox).change(function() {
 			dataContainer.processChange(id);
 		});
 
