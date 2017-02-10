@@ -29,24 +29,26 @@
 	text-decoration: line-through;
 }
 
-.unselectable{
+.button{
+	padding: 3px;
+	border-radius: 3px;
+	border: 2px solid #cccccc;
+	background-color: #cccccc;
 	-webkit-user-select: none;  
  	-moz-user-select: none;    	
     -ms-user-select: none;      
   	user-select: none;
-}
-
-.hand-cursor{
-	cursor: pointer; 
+  	cursor: pointer; 
 	cursor: hand; 
 }
 
+.button-neutral:hover{
+	border-color: #aaaaaa;
+}
+
 .delete-entry{
-	padding: 3px;
-	margin-left: 5px;
-	border-radius: 3px;
-	border: 2px solid #ff9999;
-	text-decoration: none;
+ 	border-color: #ff9999;
+ 	margin-left: 5px;
 	background-color: #ff9999;
 }
 .delete-entry:hover{

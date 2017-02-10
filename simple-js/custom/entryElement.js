@@ -4,9 +4,11 @@ var entryElement = {
 		$(span).attr('id', id);
 		$(span).addClass('single-entry');
 
+		//TODO - create a label or something to explain the checkbox
 		var doneBox = document.createElement('input');
 		$(doneBox).attr('type', 'checkbox');
 		$(doneBox).attr('id', id + '-box');
+		$(doneBox).attr('title', 'toggle done');
 		$(doneBox).prop('checked', done);
 		$(doneBox).addClass('done-box');
 		span.appendChild(doneBox);
@@ -24,8 +26,9 @@ var entryElement = {
 		
 		var a = document.createElement('span');
 		$(a).addClass('delete-entry');
-		$(a).addClass('unselectable');
-		$(a).addClass('hand-cursor');
+		//$(a).addClass('unselectable');
+		$(a).addClass('button');
+		//$(a).addClass('hand-cursor');
 		$(a).text('delete');
 		span.appendChild(a);
 

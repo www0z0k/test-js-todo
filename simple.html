@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--
+    Just buttons and an output container
+-->
 <head>
 
     <meta charset="utf-8">
@@ -13,15 +15,19 @@
     <!-- JQuery -->
     <script src="simple-js/jquery.js"></script>
     <!-- Custom --> 
+    <!-- entry element creator -->
     <script src="simple-js/custom/entryElement.js"></script>
+    <!-- main component - reads, writes and renders externally stored data -->
     <script src="simple-js/custom/main.js"></script>
+    <!-- contains a value object for entry model and handles changes -->
     <script src="simple-js/custom/dataContainer.js"></script>
 </head>
 
 
 <body onload="main.init()">
-    <a onclick="main.addNew()" class="unselectable hand-cursor">add new</a>
-    <a onclick="main.updateOrder()" class="unselectable hand-cursor">sort</a>
+    <a onclick="main.addNew()" class="button button-neutral">add new</a>
+    <a onclick="main.updateOrder()" class="button button-neutral">sort</a>
+    <br><br>
 	<div id="main-container">
     </div>
 
